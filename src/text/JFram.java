@@ -5,6 +5,8 @@
  */
 package text;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author PH Laptop
