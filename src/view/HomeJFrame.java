@@ -699,7 +699,7 @@ public class HomeJFrame extends javax.swing.JFrame {
         InfoMon.setText("");
         fin.setText("");
         if(InputDiem!=null)
-        InputDiem.setVisible(false);
+            InputDiem.setVisible(false);
     }//GEN-LAST:event_CleanActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -710,7 +710,7 @@ public class HomeJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập nhấn nút tìm kiếm","ERROR",JOptionPane.ERROR_MESSAGE);
         }
         else if(InputDiem.getText().trim().length()==0)
-        JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập điểm","ERROR",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập điểm","ERROR",JOptionPane.ERROR_MESSAGE);
         else{
             Float diem = Float.parseFloat(InputDiem.getText());
             int i = check(NhapMa.getText());
@@ -726,6 +726,7 @@ public class HomeJFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String ma = NhapMa.getText();
         if(NhapMa.getText().trim().length()==0){
+        
             JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập vào mã học viên","ERROR",JOptionPane.ERROR_MESSAGE);
         }
         else if(check(ma)==-1){
@@ -802,7 +803,6 @@ public class HomeJFrame extends javax.swing.JFrame {
         
         if(Search.getText().trim().length()==0){
             index = List.getSelectedRow();
-            
             if(index==-1){
                 JOptionPane.showMessageDialog(rootPane, "Hãy chọn một dòng để xóa");
                 return ;
@@ -858,8 +858,8 @@ public class HomeJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane, "Vui lòng nhập điểm cần sửa", "WARNING", JOptionPane.WARNING_MESSAGE);
         else{
             float diem = Float.parseFloat(SuaDiem.getText());
-            if(diem<0 || diem >10)
-            JOptionPane.showMessageDialog(rootPane, "Điểm không hợp lệ","WARNING",JOptionPane.WARNING_MESSAGE);
+            if(diem<=0 || diem >=10)
+                JOptionPane.showMessageDialog(rootPane, "Điểm không hợp lệ","WARNING",JOptionPane.WARNING_MESSAGE);
             else{
                 int index = check(MaHV.getText());
                 arr[index].setDiemthi(diem);
@@ -879,9 +879,9 @@ public class HomeJFrame extends javax.swing.JFrame {
         if(MaHV.getText().trim().length()==0){
             SuaDiem.setVisible(false);  
         }
-        else if(arr[check(MaHV.getText())].getDiemthi()==-1){
-            SuaDiem.setVisible(false);  
-        }
+//        else if(arr[check(MaHV.getText())].getDiemthi()==-1){
+//            SuaDiem.setVisible(false);  
+//        }
     }//GEN-LAST:event_SuaDiemMouseClicked
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
