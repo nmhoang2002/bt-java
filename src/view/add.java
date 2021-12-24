@@ -207,19 +207,19 @@ public class add extends javax.swing.JDialog {
         String mon = txtmon.getText();
         String lop = txtlop.getText();
         boolean check = true ;
-        if(mahv.length()==0){
+        if(mahv.trim().length()==0){
             JOptionPane.showMessageDialog(rootPane,"Mã học viên không được bỏ trông");
             check = false;
         }
-        if(name.length()==0){
+        if(name.trim().length()==0){
             JOptionPane.showMessageDialog(rootPane,"Họ và tên không được bỏ trông");
             check = false;
         }
-        if(mon.length()==0){
+        if(mon.trim().length()==0){
             JOptionPane.showMessageDialog(rootPane,"Môn học không được bỏ trông");
             check = false;
         }
-        if(lop.length()==0){
+        if(lop.trim().length()==0){
             JOptionPane.showMessageDialog(rootPane,"Tên lớp không được bỏ trông");
             check = false;
         }
