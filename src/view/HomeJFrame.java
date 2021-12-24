@@ -156,10 +156,12 @@ public class HomeJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        Tab1.setBackground(new java.awt.Color(255, 255, 153));
         Tab1.setToolTipText("");
         Tab1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Tab1.setPreferredSize(new java.awt.Dimension(749, 470));
 
+        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
         jPanel1.setToolTipText("QUẢN LÝ ĐIỂM");
 
         List.setBackground(new java.awt.Color(0, 255, 255));
@@ -306,7 +308,7 @@ public class HomeJFrame extends javax.swing.JFrame {
                             .addComponent(jButton9))))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Delete, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -315,6 +317,8 @@ public class HomeJFrame extends javax.swing.JFrame {
         );
 
         Tab1.addTab("Xem điểm", jPanel1);
+
+        Tab3.setBackground(new java.awt.Color(153, 255, 255));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 51, 51));
@@ -441,9 +445,7 @@ public class HomeJFrame extends javax.swing.JFrame {
                         .addGap(300, 300, 300)
                         .addComponent(jLabel10)))
                 .addContainerGap(225, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Tab3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane3))
+            .addComponent(jScrollPane3)
         );
         Tab3Layout.setVerticalGroup(
             Tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,13 +468,15 @@ public class HomeJFrame extends javax.swing.JFrame {
                 .addGroup(Tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton10)
                     .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(Fin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         Tab1.addTab("Nhập/Sửa điểm", Tab3);
+
+        jPanel4.setBackground(new java.awt.Color(51, 153, 255));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 0, 0));
