@@ -1,16 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package nhom6;
+
+package model;
 
 import java.io.Serializable;
 
-/**
- *
- * @author PH Laptop
- */
 public class HocVien implements Serializable {
     private String mahv ;
     private String hovaten;

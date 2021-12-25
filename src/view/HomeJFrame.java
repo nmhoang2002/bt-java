@@ -1,10 +1,11 @@
 
 package view;
 
+import model.Controler;
+import model.HocVien;
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.table.DefaultTableModel;
-import nhom6.*;
 import java.io.*;
 
 
@@ -17,7 +18,7 @@ public class HomeJFrame extends javax.swing.JFrame {
     /**
      * Creates new form HomeJFrame
      */
-    private HocVien[] arr = Control.readFromFile("hocvien.txt");
+    private HocVien[] arr = Controler.readFromFile("hocvien.txt");
     private DefaultTableModel model;
     private DefaultTableModel table_update;
     private DefaultTableModel statistical;
@@ -68,11 +69,11 @@ public class HomeJFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(rootPane,"Mã hoc viên này đã tồn tại");
             return ;
         }
-        arr = Control.Add(arr, h);
+        arr = Controler.Add(arr, h);
         this.ShowList(arr,model);
         this.ShowList(arr,table_update);
         this.Statistical();
-        Control.writeToFile("hocvien.txt", h);
+        Controler.writeToFile("hocvien.txt", h);
     }
     
     
@@ -156,12 +157,13 @@ public class HomeJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Tab1.setBackground(new java.awt.Color(255, 255, 153));
+        Tab1.setBackground(new java.awt.Color(204, 204, 204));
+        Tab1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Tab1.setToolTipText("");
         Tab1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         Tab1.setPreferredSize(new java.awt.Dimension(749, 470));
 
-        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setToolTipText("QUẢN LÝ ĐIỂM");
 
         List.setBackground(new java.awt.Color(0, 255, 255));
@@ -207,7 +209,7 @@ public class HomeJFrame extends javax.swing.JFrame {
             }
         });
 
-        Exit.setBackground(new java.awt.Color(0, 0, 204));
+        Exit.setBackground(new java.awt.Color(255, 0, 0));
         Exit.setText("Thoát");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -222,11 +224,11 @@ public class HomeJFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 51, 51));
         jLabel12.setText("XEM ĐIỂM");
 
-        jButton5.setIcon(new javax.swing.ImageIcon("D:\\java\\Nhom6\\images\\save-file.png")); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon("D:\\java\\Nhom6\\bt-java\\images\\save-file.png")); // NOI18N
         jButton5.setMaximumSize(new java.awt.Dimension(32, 32));
         jButton5.setMinimumSize(new java.awt.Dimension(32, 32));
         jButton5.setPreferredSize(new java.awt.Dimension(32, 32));
@@ -260,7 +262,7 @@ public class HomeJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 763, Short.MAX_VALUE))
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 761, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -320,7 +322,7 @@ public class HomeJFrame extends javax.swing.JFrame {
 
         Tab3.setBackground(new java.awt.Color(153, 255, 255));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 51, 51));
         jLabel10.setText("NHẬP/SỬA ĐIỂM");
 
@@ -444,7 +446,7 @@ public class HomeJFrame extends javax.swing.JFrame {
                     .addGroup(Tab3Layout.createSequentialGroup()
                         .addGap(300, 300, 300)
                         .addComponent(jLabel10)))
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addContainerGap(223, Short.MAX_VALUE))
             .addComponent(jScrollPane3)
         );
         Tab3Layout.setVerticalGroup(
@@ -478,7 +480,7 @@ public class HomeJFrame extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(51, 153, 255));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 0, 0));
         jLabel9.setText("DANH SÁCH HỌC VIÊN THI LẠI");
 
@@ -514,7 +516,7 @@ public class HomeJFrame extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(78, 78, 78)
                         .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 628, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -522,8 +524,8 @@ public class HomeJFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel9)
                 .addGap(34, 34, 34)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(191, Short.MAX_VALUE))
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         Tab1.addTab("Thống kê", jPanel4);
@@ -552,13 +554,13 @@ public class HomeJFrame extends javax.swing.JFrame {
             }
             else if(index==1){
                 HocVien[] the = Gan();
-                Control.Sort(the,true);
+                Controler.Sort(the,true);
                 this.ShowList(the, model);
                 this.ShowList(the,table_update);
             }
             else if(index==2){
                 HocVien[] the = Gan();
-                Control.Sort(the,false);
+                Controler.Sort(the,false);
                 this.ShowList(the, model);
                 this.ShowList(the,table_update);
             }
@@ -568,7 +570,7 @@ public class HomeJFrame extends javax.swing.JFrame {
     private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
         int n = JOptionPane.showConfirmDialog(rootPane, "Bạn có muốn lưu lại ko", "QUESTION", JOptionPane.YES_NO_OPTION);
         if(n == JOptionPane.YES_OPTION){
-            Control.SaveData("hocvien.txt", arr);
+            Controler.SaveData("hocvien.txt", arr);
         }
         System.exit(0);
     }//GEN-LAST:event_ExitActionPerformed
@@ -585,7 +587,7 @@ public class HomeJFrame extends javax.swing.JFrame {
         }
         int n = JOptionPane.showConfirmDialog(rootPane, "Bạn có muốn xóa học viên này không", "QUESTION", JOptionPane.YES_NO_OPTION);
         if(n == JOptionPane.YES_OPTION){
-            arr = Control.Delete(arr, index);
+            arr = Controler.Delete(arr, index);
             this.ShowList(arr,model);
             this.Statistical();
             this.ShowList(arr,table_update);
@@ -658,7 +660,7 @@ public class HomeJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_UpdateMouseClicked
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        Control.SaveData("hocvien.txt", arr);
+        Controler.SaveData("hocvien.txt", arr);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed

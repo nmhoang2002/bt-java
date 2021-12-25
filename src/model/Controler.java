@@ -1,5 +1,5 @@
 
-package nhom6;
+package model;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.io.ObjectOutputStream;
  *
  * @author PH Laptop
  */
-public class Control {
+public class Controler {
     public static void Sort(HocVien hv[],boolean k){
         // k = true là sắp xếp tăng dần k = false là giảm dần
         int x ;
@@ -23,8 +23,7 @@ public class Control {
                     x = j ;                       
             HocVien temp =hv[i] ;
             hv[i] = hv[x] ;
-            hv[x] = temp ;
-                
+            hv[x] = temp ;   
          }
     }
     public static HocVien [] Add(HocVien hv[],HocVien h){
