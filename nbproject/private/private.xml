@@ -12,9 +12,10 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/java/Nhom6/src/nhom6/HocVien.java</file>
-            <file>file:/D:/java/Nhom6/src/view/HomeJFrame.java</file>
-            <file>file:/D:/java/Nhom6/src/nhom6/Control.java</file>
+            <file>file:/D:/java/Nhom6/bt-java/src/view/HomeJFrame.java</file>
+            <file>file:/D:/java/Nhom6/bt-java/src/view/add.java</file>
+            <file>file:/D:/java/Nhom6/bt-java/src/model/Controler.java</file>
+            <file>file:/D:/java/Nhom6/bt-java/src/model/HocVien.java</file>
         </group>
     </open-files>
 </project-private>
