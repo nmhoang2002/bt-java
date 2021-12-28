@@ -216,24 +216,14 @@ public class add extends javax.swing.JDialog {
         String mon = txtmon.getText();
         String lop = txtlop.getText();
         boolean check = true ;
-        if(mahv.trim().length()==0){
-            JOptionPane.showMessageDialog(rootPane,"Mã học viên không được bỏ trông");
+        if(mahv.trim().length()==0 || name.trim().length()==0 || mon.trim().length()==0 || lop.trim().length()==0){
+            JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập đầy đủ thông tin","WARNING",JOptionPane.WARNING_MESSAGE);
             check = false;
         }
-        if(name.trim().length()==0){
-            JOptionPane.showMessageDialog(rootPane,"Họ và tên không được bỏ trông");
-            check = false;
-        }
-        if(mon.trim().length()==0){
-            JOptionPane.showMessageDialog(rootPane,"Môn học không được bỏ trông");
-            check = false;
-        }
-        if(lop.trim().length()==0){
-            JOptionPane.showMessageDialog(rootPane,"Tên lớp không được bỏ trông");
-            check = false;
-        }
+        
         if(name.matches("[^a-zA-Z]+")){
-            JOptionPane.showMessageDialog(rootPane,"Họ và tên chỉ chứa chữ cái");
+           
+            JOptionPane.showMessageDialog(rootPane,"Họ và tên phải chứa chữ cái","WARNING",JOptionPane.WARNING_MESSAGE);
             check = false;
         }
         if(check){

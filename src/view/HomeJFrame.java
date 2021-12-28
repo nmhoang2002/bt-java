@@ -232,7 +232,7 @@ public class HomeJFrame extends javax.swing.JFrame {
 
         jButton8.setBackground(new java.awt.Color(204, 204, 204));
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jButton8.setText("OK");
+        jButton8.setText("TÌm kiếm");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -266,15 +266,15 @@ public class HomeJFrame extends javax.swing.JFrame {
                         .addComponent(jScrollPane2)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 158, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(92, 92, 92)
+                        .addGap(103, 103, 103)
                         .addComponent(Delete, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(86, 86, 86)
+                        .addGap(95, 95, 95)
                         .addComponent(Exit, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(163, 163, 163))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(267, Short.MAX_VALUE)
                 .addComponent(Sort, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(256, 256, 256))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -283,29 +283,35 @@ public class HomeJFrame extends javax.swing.JFrame {
                         .addGap(136, 136, 136)
                         .addComponent(jLabel13)
                         .addGap(42, 42, 42)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Search)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(292, 292, 292)
-                        .addComponent(jLabel12)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel12)
+                        .addGap(50, 50, 50)))
+                .addGap(273, 273, 273))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(12, 12, 12)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(22, 22, 22))
+                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(12, 12, 12)
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(19, 19, 19)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton8)
                     .addComponent(jButton9))
@@ -638,20 +644,24 @@ public class HomeJFrame extends javax.swing.JFrame {
                     this.ShowList(arr, table_update);
                     return;
                 }
-                if(!CheckPoint(SuaDiem.getText())){
+                float Diem = -1 ;
+                try {
+                    Diem = Float.parseFloat(SuaDiem.getText());
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE);
+                    return;
+                } 
+                
+                if(Diem < 0 || Diem >10){
                     JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
-                    return ;
+                  
                 }
-                else{              
-                    float Diem = Float.parseFloat(SuaDiem.getText());
-                    if(Diem < 0 || Diem >10){
-                        JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
-                        return ;
-                    }
+                else{
                     arr[index].setDiemthi(Diem);
                     this.ShowList(arr, model);
                     this.ShowList(arr, table_update);
                     this.Statistical();
+                    
                 }
             }
             else{
@@ -659,17 +669,7 @@ public class HomeJFrame extends javax.swing.JFrame {
             }
         }
     }//GEN-LAST:event_jButton10ActionPerformed
-    public boolean CheckPoint(String diem){
-        boolean check = true ;
-        for(int i=0;i<diem.length();i++){
-            if((diem.charAt(i)!='.') && ( diem.charAt(i) < '0' ) || (diem.charAt(i) > '9')){
-                check = false ;
-                break;
-            }
-           
-        }
-        return check ;
-    }
+
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         if(MaHV.getText().trim().length()==0){
             JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập mã học viên", "ERROR",JOptionPane.ERROR_MESSAGE);
@@ -689,20 +689,24 @@ public class HomeJFrame extends javax.swing.JFrame {
                     this.ShowList(arr, table_update);
                     return;
                 }
-                if(!CheckPoint(SuaDiem.getText())){
-                    JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
-                    return ;
+                float Diem = -1 ;
+                try {
+                    Diem = Float.parseFloat(SuaDiem.getText());
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE);
+                    return;
                 }
-                else{              
-                    float Diem = Float.parseFloat(SuaDiem.getText());
-                    if(Diem < 0 || Diem >10){
-                        JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
-                        return ;
-                    }
+                
+                if(Diem < 0 || Diem >10){
+                    JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
+                  
+                }
+                else{
                     arr[index].setDiemthi(Diem);
                     this.ShowList(arr, model);
                     this.ShowList(arr, table_update);
                     this.Statistical();
+                    
                 }
             }
             else{
