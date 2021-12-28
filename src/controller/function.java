@@ -1,5 +1,5 @@
 
-package model;
+package controller;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,12 +7,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import model.HocVien;
 
 /**
  *
  * @author PH Laptop
  */
-public class Controler {
+public class function {
     public static void Sort(HocVien hv[],boolean k){
         // k = true là sắp xếp tăng dần k = false là giảm dần
         int x ;
