@@ -421,7 +421,7 @@
             <Component class="javax.swing.JButton" name="jButton1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="D:\java\Nhom6\images\save-file.png"/>
+                  <Image iconType="2" name="D:\java\Nhom6\bt-java\images\save-file.png"/>
                 </Property>
               </Properties>
               <Events>
