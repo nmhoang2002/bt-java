@@ -122,6 +122,7 @@ public class HomeJFrame extends javax.swing.JFrame {
         Fin = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
+        finish = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
@@ -273,53 +274,51 @@ public class HomeJFrame extends javax.swing.JFrame {
                         .addGap(95, 95, 95)
                         .addComponent(Exit, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(163, 163, 163))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(267, Short.MAX_VALUE)
-                .addComponent(Sort, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(256, 256, 256))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
+                        .addGap(121, 121, 121)
                         .addComponent(jLabel13)
-                        .addGap(42, 42, 42)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(45, 45, 45)
+                                .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Search)))
+                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(12, 12, 12))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addComponent(Search))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel12)
-                        .addGap(50, 50, 50)))
+                        .addGap(70, 70, 70)))
                 .addGap(273, 273, 273))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(Sort, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(258, 258, 258))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(22, 22, 22))
-                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(11, 11, 11)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Search, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(19, 19, 19)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton8)
                     .addComponent(jButton9))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Sort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Sort, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Add, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Delete, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -425,10 +424,14 @@ public class HomeJFrame extends javax.swing.JFrame {
             }
         });
 
+        finish.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
+        finish.setForeground(new java.awt.Color(255, 255, 255));
+
         javax.swing.GroupLayout Tab3Layout = new javax.swing.GroupLayout(Tab3);
         Tab3.setLayout(Tab3Layout);
         Tab3Layout.setHorizontalGroup(
             Tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(Tab3Layout.createSequentialGroup()
                 .addGap(773, 773, 773)
                 .addComponent(Fin)
@@ -461,7 +464,10 @@ public class HomeJFrame extends javax.swing.JFrame {
                             .addComponent(jLabel10)
                             .addComponent(jButton3))
                         .addGap(0, 0, Short.MAX_VALUE))))
-            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Tab3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(finish, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(335, 335, 335))
         );
         Tab3Layout.setVerticalGroup(
             Tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -469,7 +475,7 @@ public class HomeJFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(Tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Tab3Layout.createSequentialGroup()
-                        .addGap(0, 258, Short.MAX_VALUE)
+                        .addGap(0, 244, Short.MAX_VALUE)
                         .addComponent(Fin))
                     .addGroup(Tab3Layout.createSequentialGroup()
                         .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -489,7 +495,9 @@ public class HomeJFrame extends javax.swing.JFrame {
                         .addGroup(Tab3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
                             .addComponent(jButton10))
-                        .addGap(45, 45, 45)))
+                        .addGap(18, 18, 18)
+                        .addComponent(finish)
+                        .addGap(13, 13, 13)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
@@ -567,7 +575,7 @@ public class HomeJFrame extends javax.swing.JFrame {
             
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         SuaDiem.setText("");
-        Fin.setText("");
+        finish.setText("");
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void SuaDiemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuaDiemActionPerformed
@@ -576,7 +584,7 @@ public class HomeJFrame extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         MaHV.setText("");
-        Fin.setText("");
+        finish.setText("");
         this.ShowList(arr, table_update);
         
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -618,10 +626,7 @@ public class HomeJFrame extends javax.swing.JFrame {
                 }
                     
                 
-            }
-           
-        
-        
+            }   
     }//GEN-LAST:event_UpdateMouseClicked
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
@@ -644,25 +649,25 @@ public class HomeJFrame extends javax.swing.JFrame {
                     this.ShowList(arr, table_update);
                     return;
                 }
-                float Diem = -1 ;
                 try {
-                    Diem = Float.parseFloat(SuaDiem.getText());
+                    float Diem = Float.parseFloat(SuaDiem.getText());
+                    if(Diem < 0 || Diem >10){
+                        JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
+                  
+                    }
+                    else{
+                        arr[index].setDiemthi(Diem);
+                        finish.setText("Thành công");
+                        this.ShowList(arr, model);
+                        this.ShowList(arr, table_update);
+                        this.Statistical();
+
+                    }
                 } catch (NumberFormatException e) {
                     JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE);
-                    return;
                 } 
                 
-                if(Diem < 0 || Diem >10){
-                    JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
-                  
-                }
-                else{
-                    arr[index].setDiemthi(Diem);
-                    this.ShowList(arr, model);
-                    this.ShowList(arr, table_update);
-                    this.Statistical();
-                    
-                }
+                
             }
             else{
                 JOptionPane.showMessageDialog(rootPane, "Mã học viên không tồn tại", "ERROL",JOptionPane.ERROR_MESSAGE);
@@ -689,25 +694,24 @@ public class HomeJFrame extends javax.swing.JFrame {
                     this.ShowList(arr, table_update);
                     return;
                 }
-                float Diem = -1 ;
+                
                 try {
-                    Diem = Float.parseFloat(SuaDiem.getText());
+                    float Diem = Float.parseFloat(SuaDiem.getText());
+                    if(Diem < 0 || Diem >10){
+                        JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
+                  
+                    }
+                    else{
+                        arr[index].setDiemthi(Diem);
+                        finish.setText("Thành công");
+                        this.ShowList(arr, model);
+                        this.ShowList(arr, table_update);
+                        this.Statistical();
+
+                    }
                 } catch (NumberFormatException e) {
                     JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE);
-                    return;
-                }
-                
-                if(Diem < 0 || Diem >10){
-                    JOptionPane.showMessageDialog(rootPane,"Điểm không hợp lệ", "ERROR",JOptionPane.ERROR_MESSAGE); 
-                  
-                }
-                else{
-                    arr[index].setDiemthi(Diem);
-                    this.ShowList(arr, model);
-                    this.ShowList(arr, table_update);
-                    this.Statistical();
-                    
-                }
+                }              
             }
             else{
                 JOptionPane.showMessageDialog(rootPane, "Mã học viên không tồn tại", "ERROL",JOptionPane.ERROR_MESSAGE);
@@ -723,7 +727,7 @@ public class HomeJFrame extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         if(Search.getText().trim().length()==0){
-            JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập vào mã học viên","MESSAGE",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane,"Vui lòng nhập vào mã học viên", "ERROR",JOptionPane.ERROR_MESSAGE);
         }
         else{
             String ma = Search.getText();
@@ -790,6 +794,7 @@ public class HomeJFrame extends javax.swing.JFrame {
             this.Statistical();
             this.ShowList(arr,table_update);
             Search.setText("");
+            function.SaveData("hocvien.txt", arr);
         }
     }//GEN-LAST:event_DeleteActionPerformed
 
@@ -872,6 +877,7 @@ public class HomeJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel Tab3;
     private javax.swing.JTable Table_statistical;
     private javax.swing.JTable Update;
+    private javax.swing.JLabel finish;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
